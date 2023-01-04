@@ -36,3 +36,12 @@ node filename.js, for example:
 ![localhost](https://user-images.githubusercontent.com/68760595/210563863-557cb7ed-887b-4045-b9f0-6ca66fa7e7df.JPG)
 
 * for stop process, in terminal -> `CTRL + C`
+
+6. TryCatch
+
+`node trycatch.js`
+
+![trycatch](https://user-images.githubusercontent.com/68760595/210566591-a341934c-43a5-411c-86dd-1f7eb90af4ce.JPG)
+
+
+
