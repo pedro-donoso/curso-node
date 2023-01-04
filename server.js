@@ -2,6 +2,8 @@ const http = require('http');
 const servidor = http.createServer((req, res) => {
     res.end('Hola mundo');
 });
-servidor.listen(3000, () => {
-    console.log('El servidor esta escuchando...');
+const PUERTO = 3000;
+servidor.listen(PUERTO, () => {
+    console.log(`El servidor esta escuchando en http://localhost:${PUERTO}...`);
 });
+
