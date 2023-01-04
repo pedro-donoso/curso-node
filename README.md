@@ -1,2 +1,5 @@
-# curso-node
-curso de node.js de free code camp aprendiend
+### Steps
+
+1. Download zip code
+
+#### In Terminal:
