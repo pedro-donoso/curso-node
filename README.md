@@ -31,6 +31,8 @@ node filename.js, for example:
 
 5.1 Response in localhost (with server run in terminal)
 
-for view message in browser -> http://localhost:4000
+* for view message in browser -> http://localhost:4000
 
 ![localhost](https://user-images.githubusercontent.com/68760595/210563863-557cb7ed-887b-4045-b9f0-6ca66fa7e7df.JPG)
+
+* for stop process, in terminal -> `CTRL + C`
