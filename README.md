@@ -13,3 +13,6 @@ node filename.js, for example:
 
 ![json-demo](https://user-images.githubusercontent.com/68760595/210561681-75123b4d-cbd9-4f49-a206-4b55f5fb5d0a.JPG)
 
+`node promise.js`
+
+![promise](https://user-images.githubusercontent.com/68760595/210562128-d73e67b9-faa8-43c4-ad04-0a210f76887a.JPG)
