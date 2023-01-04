@@ -29,8 +29,8 @@ node filename.js, for example:
 
 ![res](https://user-images.githubusercontent.com/68760595/210562968-3f0f2381-f158-437c-a0ce-fa4115a52dbb.JPG)
 
-5.1 Response in localhost (with server run in terminal), in browser:
+5.1 Response in localhost (with server run in terminal)
 
-http://localhost:4000
+for view message in browser -> http://localhost:4000
 
 ![localhost](https://user-images.githubusercontent.com/68760595/210563863-557cb7ed-887b-4045-b9f0-6ca66fa7e7df.JPG)
