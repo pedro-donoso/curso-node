@@ -43,5 +43,10 @@ node filename.js, for example:
 
 ![trycatch](https://user-images.githubusercontent.com/68760595/210566591-a341934c-43a5-411c-86dd-1f7eb90af4ce.JPG)
 
+7. Url
+
+`node url.js`
+
+![url](https://user-images.githubusercontent.com/68760595/210567006-fd63d22b-5aed-4ad2-a554-9dbeaf827916.JPG)
 
 
