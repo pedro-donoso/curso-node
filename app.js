@@ -28,7 +28,20 @@ function manejarSolicitudGET(req, res) {
 function manejarSolicitudPOST(req, res) {
     const path = req.url;
     if (path === '/api/cursos/programacion') {
-        return res.end('El servidor recibio una solicitud POST para /cursos/programacion')
+
+        let cuerpo = '';
+
+        req.on('data', contenido => {
+            cuerpo += contenido.toString();
+        });
+        
+        req.on('end', () => {
+            console.log(cuerpo);
+            console.log(typeof cuerpo);
+            res.end('El servidor recibio una solicitud POST para /cursos/programacion')
+        });
+
+        // return res.end('El servidor recibio una solicitud POST para /cursos/programacion')
     }
 }
 const PUERTO = 3000;
