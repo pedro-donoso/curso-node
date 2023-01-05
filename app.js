@@ -14,6 +14,7 @@ const servidor = http.createServer((req, res) => {
 });
 function manejarSolicitudGET(req, res) {
     const camino = req.url;
+
     if (camino === '/') {
         res.writeHead(200, {'Content-Type': 'application/json'});
         return res.end('Bienvenidos a mi primer servidor y API creados con Node.js');
@@ -27,6 +28,9 @@ function manejarSolicitudGET(req, res) {
 }
 function manejarSolicitudPOST(req, res) {
     const path = req.url;
+
+    console.log(res.statusCode);
+
     if (path === '/api/cursos/programacion') {
 
         let cuerpo = '';
@@ -37,11 +41,8 @@ function manejarSolicitudPOST(req, res) {
         
         req.on('end', () => {
             console.log(cuerpo);
-            console.log(typeof cuerpo);
-            res.end('El servidor recibio una solicitud POST para /cursos/programacion')
+            return res.end('El servidor recibio una solicitud POST para api/cursos/programacion')
         });
-
-        // return res.end('El servidor recibio una solicitud POST para /cursos/programacion')
     }
 }
 const PUERTO = 3000;
