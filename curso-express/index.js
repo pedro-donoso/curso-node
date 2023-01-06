@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 // desestructuracion infocursos, para importarlo directamente
 const { infoCursos } = require('./cursos-bd');
-console.log(infoCursos);
+// console.log(infoCursos);
 // routing sitio principal
 app.get('/', (req, res) => {
     res.send('Mi primer servidor con Express. Cursos');
@@ -11,10 +11,14 @@ app.get('/', (req, res) => {
 app.get('/api/cursos', (req, res) => {
     res.send(JSON.stringify(infoCursos));
 });
-// routing curso programacion
+// routing cursos de programacion
 app.get('/api/cursos/programacion', (req, res) => {
     res.send(JSON.stringify(infoCursos.programacion))
 })
+// routing cursos de matematicas
+app.get('/api/cursos/matematicas', (req, res) => {
+    res.send(JSON.stringify(infoCursos.matematicas))
+}) 
 
 const PUERTO = process.env.PORT || 3000;
 app.listen(PUERTO, () => {
