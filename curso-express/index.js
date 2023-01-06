@@ -5,5 +5,9 @@ const { infoCursos } = require('./cursos-bd');
 console.log(infoCursos);
 // routing
 app.get('/', (req, res) => {
-    res.send('Mi primer servidor. Curso')
-})
+    res.send('Mi primer servidor con Express. Cursos');
+});
+const PUERTO = process.env.PORT || 3000;
+app.listen(PUERTO, () => {
+    console.log(`El servidor esta escuchando en el puerto ${PUERTO}`);
+});
