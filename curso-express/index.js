@@ -15,6 +15,16 @@ app.get('/api/cursos', (req, res) => {
 app.get('/api/cursos/programacion', (req, res) => {
     res.send(JSON.stringify(infoCursos.programacion))
 })
+
+// parametros url
+app.get('/api/cursos/programacion/:lenguaje', (req, res) => {
+    const lenguaje = req.params.lenguaje;
+    const resultados = infoCursos.programacion.filter(curso => curso.lenguaje === lenguaje);
+    if (resultados.length === 0) {
+        return res.send(`No se encontraron cursos de ${lenguaje}`);
+    }
+})
+
 // routing cursos de matematicas
 app.get('/api/cursos/matematicas', (req, res) => {
     res.send(JSON.stringify(infoCursos.matematicas))
